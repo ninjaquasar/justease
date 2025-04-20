@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300..800;1,300..800&display=swap');
+@import "tailwindcss";
+
+:root {
+  font-family: 'Mulish', Verdana, sans-serif;
+  color-scheme: dark;
+  background-color: #141414;
+  color: #f6f4f8;
+}
