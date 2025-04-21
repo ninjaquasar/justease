@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "name": "Madhav Mishra",
+        "profilePicture": "",
+        "speciality": "Criminal Law",
+        "licenseId": "LLB 103959",
+        "isAvailable": true,
+        "experience": 3,
+        "fee": 4000,
+        "availabilityDays": [
+            "Monday", "Wednesday", "Thursday", "Friday", "Saturday"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Jagdish Tyagi",
+        "profilePicture": "",
+        "speciality": "Criminal Law",
+        "licenseId": "LLB 105639",
+        "isAvailable": true,
+        "experience": 6,
+        "fee": 3600,
+        "availabilityDays": [
+            "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Jagdish Mishra",
+        "profilePicture": "",
+        "speciality": "Criminal Law",
+        "licenseId": "LLB 150205",
+        "isAvailable": true,
+        "experience": 4,
+        "fee": 3400,
+        "availabilityDays": [
+            "Sunday", "Monday", "Tuesday", "Wednesday", "Friday"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Arabella Lynch",
+        "profilePicture": "",
+        "speciality": "Family Law",
+        "licenseId": "LLB 152563",
+        "isAvailable": true,
+        "experience": 5,
+        "fee": 3500,
+        "availabilityDays": [
+            "Monday", "Tuesday", "Wednesday", "Friday", "Saturday"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Thomas Michael",
+        "profilePicture": "",
+        "speciality": "Tax Law",
+        "licenseId": "LLB 140296",
+        "isAvailable": false,
+        "experience": 7,
+        "fee": 4600,
+        "availabilityDays": [
+            "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Muhammad Kawsar",
+        "profilePicture": "",
+        "speciality": "Panel Law",
+        "licenseId": "LLB 109629",
+        "isAvailable": true,
+        "experience": 3,
+        "fee": 3900,
+        "availabilityDays": [
+            "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"
+        ]
+    }
+]

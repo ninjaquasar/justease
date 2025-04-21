@@ -17,10 +17,6 @@
   cursor: url(/cursor.png), auto;
 }
 
-/* a, button {
-  cursor: url(/explosive-cursor.png), auto;
-} */
-
 nav > ul > li > a.active {
   border-bottom: 0.125rem solid #d4d4d4;
 }
