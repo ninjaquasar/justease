@@ -17,6 +17,11 @@
   cursor: url(/cursor.png), auto;
 }
 
+:root::selection {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
 nav > ul > li > a.active {
   border-bottom: 0.125rem solid #d4d4d4;
 }

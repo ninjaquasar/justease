@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Madhav Mishra",
-        "profilePicture": "",
+        "profilePicture": "https://i.ibb.co.com/M5K6GP0T/lawyer1.jpg",
         "speciality": "Criminal Law",
         "licenseId": "LLB 103959",
         "isAvailable": true,
@@ -15,7 +15,7 @@
     {
         "id": 2,
         "name": "Jagdish Tyagi",
-        "profilePicture": "",
+        "profilePicture": "https://i.ibb.co.com/fd15LdsN/lawyer2.jpg",
         "speciality": "Criminal Law",
         "licenseId": "LLB 105639",
         "isAvailable": true,
@@ -28,7 +28,7 @@
     {
         "id": 3,
         "name": "Jagdish Mishra",
-        "profilePicture": "",
+        "profilePicture": "https://i.ibb.co.com/dJQsNkZ9/lawyer3.jpg",
         "speciality": "Criminal Law",
         "licenseId": "LLB 150205",
         "isAvailable": true,
@@ -41,7 +41,7 @@
     {
         "id": 4,
         "name": "Arabella Lynch",
-        "profilePicture": "",
+        "profilePicture": "https://i.ibb.co.com/Rp5JRh89/lawyer4.jpg",
         "speciality": "Family Law",
         "licenseId": "LLB 152563",
         "isAvailable": true,
@@ -54,7 +54,7 @@
     {
         "id": 5,
         "name": "Thomas Michael",
-        "profilePicture": "",
+        "profilePicture": "https://i.ibb.co.com/bM2qQ2vp/lawyer5.jpg",
         "speciality": "Tax Law",
         "licenseId": "LLB 140296",
         "isAvailable": false,
@@ -67,7 +67,7 @@
     {
         "id": 6,
         "name": "Muhammad Kawsar",
-        "profilePicture": "",
+        "profilePicture": "https://i.ibb.co.com/4br1ZcW/lawyer6.jpg",
         "speciality": "Panel Law",
         "licenseId": "LLB 109629",
         "isAvailable": true,
