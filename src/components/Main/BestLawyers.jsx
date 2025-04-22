@@ -3,7 +3,6 @@ import { useLoaderData } from 'react-router';
 
 export default function BestLawyers() {
     const lawyersData = useLoaderData();
-    console.log(lawyersData);
     return (
         <section id="best-lawyers" className="space-y-8">
             <div className="space-y-4 text-center">
@@ -12,7 +11,7 @@ export default function BestLawyers() {
             </div>
             <div className="lawyers-container grid grid-cols-1 2xl:grid-cols-2 gap-16">
                 {
-                    lawyersData.map(lawyer => <LawyerCard lawyer={lawyer}></LawyerCard>)
+                    lawyersData.map(lawyer => <LawyerCard key={lawyer.id} lawyer={lawyer}></LawyerCard>)
                 }
             </div>
             <div className="text-center">

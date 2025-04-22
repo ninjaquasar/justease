@@ -1,16 +1,18 @@
 import Navbar from './components/Header/Navbar';
 import Banner from './components/Header/Banner';
 import BestLawyers from './components/Main/BestLawyers';
+import Success from './components/Main/Success';
 
 export default function App() {
   return (
     <>
-      <header className="px-40">
+      <header className="px-44">
         <Navbar></Navbar>
         <Banner></Banner>
       </header>
-      <main className="px-40 space-y-24">
+      <main className="px-44 space-y-24">
         <BestLawyers></BestLawyers>
+        <Success></Success>
       </main>
     </>
   )
