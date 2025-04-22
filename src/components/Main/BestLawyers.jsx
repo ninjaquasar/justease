@@ -28,7 +28,7 @@ const LawyerCard = ({lawyer}) => {
     return (
         <div className="lawyer-card flex items-center justify-between p-6 rounded-3xl border border-neutral-500">
             <div className="lawyer-card-thumb w-[30%]">
-                <img src={profilePicture} alt="Thumbnail" className="rounded-2xl w-full aspect-square" />
+                <img src={profilePicture} alt="Thumbnail" className="rounded-2xl w-full aspect-square" loading='lazy' />
             </div>
             <div className="lawyer-card-content space-y-4 w-3/5">
                 <div className="space-y-2">

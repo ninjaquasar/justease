@@ -25,3 +25,8 @@
 nav > ul > li > a.active {
   border-bottom: 0.125rem solid #d4d4d4;
 }
+
+footer > ul > li > a.active {
+  background: #f2f0f4;
+  border-bottom: 0.125rem solid #404040;
+}

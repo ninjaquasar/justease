@@ -46,7 +46,7 @@ export default function Success() {
 const ServiceCard = ({service}) => {
     return (
         <div className="service-card space-y-6 py-10 px-14 rounded-2xl bg-neutral-900 border border-neutral-700">
-            <img src={service.image} alt="Service Image" />
+            <img src={service.image} alt="Service Image" loading='lazy' />
             <h1 className="text-5xl font-extrabold">{service.count}+</h1>
             <h5 className="text-xl font-medium">Total {service.topic}</h5>
         </div>

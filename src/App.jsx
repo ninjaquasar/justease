@@ -2,6 +2,7 @@ import Navbar from './components/Header/Navbar';
 import Banner from './components/Header/Banner';
 import BestLawyers from './components/Main/BestLawyers';
 import Success from './components/Main/Success';
+import Footer from './components/Footer/Footer';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <BestLawyers></BestLawyers>
         <Success></Success>
       </main>
+      <Footer></Footer>
     </>
   )
 }
