@@ -26,23 +26,17 @@ export default function Footer() {
             </ul>
             <div className="w-full border border-neutral-400 border-dashed"></div>
             <div className="social-icons flex gap-x-6">
-                <a href="https://www.linkedin.com/in/riaurko/" target="_blank" className="cursor-grenade">
-                    <img src="https://i.ibb.co.com/d0DgT5wY/linkedin.png" alt="LinkedIn" className="w-12 hover:-translate-y-2 hover:scale-105 transition-transform duration-200" />
-                </a>
-                <a href="https://github.com/riaurko" target="_blank" className="cursor-grenade">
+                <a href="https://github.com/ninjaquasar" target="_blank" className="cursor-grenade">
                     <img src="https://i.ibb.co.com/JW68nLrG/github.png" alt="GitHub" className="w-12 hover:-translate-y-2 hover:scale-105 transition-transform duration-200" />
                 </a>
-                <a href="https://www.facebook.com/riaurko" target="_blank" className="cursor-grenade">
+                <a href="https://www.facebook.com/ninjaquasar" target="_blank" className="cursor-grenade">
                     <img src="https://i.ibb.co.com/ksk23Z2s/facebook.png" alt="Facebook" className="w-12 hover:-translate-y-2 hover:scale-105 transition-transform duration-200" />
                 </a>
-                <a href="https://www.youtube.com/@riaurko" target="_blank" className="cursor-grenade">
+                <a href="https://www.youtube.com/@ninjaquasar" target="_blank" className="cursor-grenade">
                     <img src="https://i.ibb.co.com/Gfm2Zc23/youtube.png" alt="YouTube" className="w-12 hover:-translate-y-2 hover:scale-105 transition-transform duration-200" />
                 </a>
-                <a href="https://discordapp.com/users/1192212742636048486" target="_blank" className="cursor-grenade">
-                    <img src="https://i.ibb.co.com/prkjWMGK/discord.png" alt="LinkedIn" className="w-12 hover:-translate-y-2 hover:scale-105 transition-transform duration-200" />
-                </a>
-                <a href="https://x.com/riaurko" target="_blank" className="cursor-grenade">
-                    <img src="https://i.ibb.co.com/21pkB9hb/x-tweet.png" alt="X" className="w-12 hover:-translate-y-2 hover:scale-105 transition-transform duration-200" />
+                <a href="https://t.me/ninjaquasar" target="_blank" className="cursor-grenade">
+                    <img src="https://i.ibb.co.com/nMm0qdP8/telegram.png" alt="Telegram" className="w-12 hover:-translate-y-2 hover:scale-105 transition-transform duration-200" />
                 </a>
             </div>
         </footer>
