@@ -4,18 +4,19 @@ import { createBrowserRouter, RouterProvider } from 'react-router';
 import './index.css';
 import Root from './pages/Root/Root.jsx';
 import Home from './pages/Home/Home.jsx';
+import NotFound from './pages/NotFound404/NotFound.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     Component: Root,
     children: [
-      {
-        index: true,
-        loader: () => fetch("/bestLawyers.json"),
-        Component: Home
-      }
+      { index: true, loader: () => fetch("/bestLawyers.json"), Component: Home }
     ]
+  },
+  {
+    path: '*',
+    Component: NotFound
   }
 ])
 
