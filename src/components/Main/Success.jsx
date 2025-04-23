@@ -1,4 +1,5 @@
 import React from 'react';
+import CountUp from 'react-countup';
 
 export default function Success() {
     const successServices = [
@@ -44,11 +45,12 @@ export default function Success() {
 
 
 const ServiceCard = ({service}) => {
+    const { image, topic, count } = service;
     return (
         <div className="service-card space-y-6 py-10 px-14 rounded-2xl bg-neutral-900 border border-neutral-700">
-            <img src={service.image} alt="Service Image" loading='lazy' />
-            <h1 className="text-5xl font-extrabold">{service.count}+</h1>
-            <h5 className="text-xl font-medium">Total {service.topic}</h5>
+            <img src={image} alt="Service Image" loading='lazy' />
+            <CountUp start={0} end={count} duration={7.5} suffix="+" enableScrollSpy className="text-5xl font-extrabold"></CountUp>
+            <h5 className="text-xl font-medium mt-6">Total {topic}</h5>
         </div>
     )
 }

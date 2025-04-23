@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "thumbnail": "https://i.ibb.co.com/HD6tRzMH/blog1.png",
+        "title": "What is useState and how does it work on React?",
+        "description": "useState is a React (16.8) Hook that controls the state of functional components. It's generally used to modify/toggle a state based on an user action and enabling to re-render the component according to the modified state. Example: There's a button that toggles the component's background color. We can change the background color instantly when the button is clicked by storing the current state with useState and re-render the component according to the new state.",
+        "tags": ["Web Development", "Front-End Development", "React.js", "User Interface"]
+    },
+    {
+        "id": 2,
+        "thumbnail": "https://i.ibb.co.com/7tt47rv3/blog2.png",
+        "title": "What is the purpose of useEffect in React?",
+        "description": "useEffect is a React (16.8) Hook that manages the side effects in the functional components. Here, Side effects means operations that interacts with the browser environment, such-as fetching JSON data, updating the DOM. Example: We need to fetch (API) data from REST APIs (like jsonplaceholder.com) or fetch our own JSON fake data, we can use useEffect.",
+        "tags": ["Web Development", "Back-End Development", "React.js", "REST API (Fetch)"]
+    },
+    {
+        "id": 3,
+        "thumbnail": "https://i.ibb.co.com/7JQVkJMg/blog3.png",
+        "title": "What is a custom hook in React and when should you use one?",
+        "description": "Answer",
+        "tags": ["Web Development", "Front-End Development", "Back-End Development", "React.js"]
+    },
+    {
+        "id": 4,
+        "thumbnail": "https://i.ibb.co.com/0jy6bhvK/blog4.png",
+        "title": "What's the difference between controlled & uncontrolled components. Which one is better?",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eros neque, suscipit tincidunt tortor at, fringilla suscipit felis. Etiam bibendum dolor nec leo consectetur, eget euismod nisi dignissim. Aliquam cursus, augue tempus semper.",
+        "tags": ["Web Development", "Front-End Development", "React.js", "User Interface"]
+    },
+    {
+        "id": 5,
+        "thumbnail": "https://i.ibb.co.com/BVyGrS6K/blog5.png",
+        "title": "An overview of useFormStatus in React",
+        "description": "useFormStatus is a React Hook that provides info about the submission data of a form when it's submitted. It's generally useful to display updates in UI based on a form submission. Example: When a Login form is submitted, the application will redirect the user to his Dashboard. And the form submission will be detected with useFormStatus",
+        "tags": ["Web Development", "Front-End Development", "React.js", "Dynamic UI"]
+    }
+]

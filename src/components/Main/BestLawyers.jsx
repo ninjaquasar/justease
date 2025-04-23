@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router';
 
 export default function BestLawyers() {
     const lawyersData = useLoaderData();
+    const [ showAll, setShowAll ] = useState(false);
     return (
         <section id="best-lawyers" className="space-y-8">
             <div className="space-y-4 text-center">
@@ -11,12 +12,14 @@ export default function BestLawyers() {
             </div>
             <div className="lawyers-container grid grid-cols-1 2xl:grid-cols-2 gap-16">
                 {
-                    lawyersData.map(lawyer => <LawyerCard key={lawyer.id} lawyer={lawyer}></LawyerCard>)
+                    lawyersData.map(lawyer => {
+                        return (!showAll && lawyer.id <= 6) || showAll ? <LawyerCard key={lawyer.id} lawyer={lawyer}></LawyerCard> : ''
+                    })
                 }
             </div>
             <div className="text-center">
-                <button type="button" className="border border-green-900 hover:text-primary bg-primary hover:bg-transparent font-bold px-6 py-3 rounded-full cursor-grenade active:-translate-y-1 transition-transform">
-                    Show All Lawyers
+                <button type="button" className="text-xl border border-green-900 hover:text-primary bg-primary hover:bg-transparent font-bold px-6 py-3 rounded-full cursor-grenade active:-translate-y-1 transition-transform" onClick={() => setShowAll(!showAll)}>
+                    Show {showAll ? 'Less' : 'All'} Lawyers
                 </button>
             </div>
         </section>
@@ -25,6 +28,10 @@ export default function BestLawyers() {
 
 const LawyerCard = ({lawyer}) => {
     const { profilePicture, name, speciality, licenseId, isAvailable, experience } = lawyer;
+    // const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    // const dateObj = new Date();
+    // const today = weekdays[dateObj.getDay()];
+    // const isAvailable = availability.includes(today);
     return (
         <div className="lawyer-card flex items-center justify-between p-6 rounded-3xl border border-neutral-500">
             <div className="lawyer-card-thumb w-[30%]">
@@ -33,8 +40,8 @@ const LawyerCard = ({lawyer}) => {
             <div className="lawyer-card-content space-y-4 w-3/5">
                 <div className="space-y-2">
                     <div className="flex gap-x-4">
-                        <p className="text-primary bg-primary/15 px-4 py-1 font-medium text-sm rounded-full">{isAvailable ? 'Available' : 'Unavailable'}</p>
-                        <p className="text-primary bg-primary/15 px-4 py-1 font-medium text-sm rounded-full">{experience}+ Years Experience</p>
+                        <p className={`${isAvailable ? "text-primary bg-green-950/80" : "text-red-500 bg-red-950/80"} px-4 py-1 font-medium text-sm rounded-full`}>{isAvailable ? 'Available' : 'Unavailable'}</p>
+                        <p className="text-primary bg-green-950/80 px-4 py-1 font-medium text-sm rounded-full">{experience}+ Years Experience</p>
                     </div>
                     <div className="space-y-1">
                         <h4 className="text-2xl font-extrabold">{name}</h4>

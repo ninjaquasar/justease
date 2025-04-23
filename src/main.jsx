@@ -5,13 +5,15 @@ import './index.css';
 import Root from './pages/Root/Root.jsx';
 import Home from './pages/Home/Home.jsx';
 import NotFound from './pages/NotFound404/NotFound.jsx';
+import Blogs from './pages/Blogs/Blogs.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     Component: Root,
     children: [
-      { index: true, loader: () => fetch("/bestLawyers.json"), Component: Home }
+      { index: true, loader: () => fetch("/bestLawyers.json"), Component: Home },
+      { path: '/blogs', loader: () => fetch("blogs.json"), Component: Blogs }
     ]
   },
   {
