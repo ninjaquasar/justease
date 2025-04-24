@@ -4,7 +4,7 @@ import Banner from '../../components/Header/Banner';
 import Footer from '../../components/Footer/Footer';
 import { Outlet } from 'react-router';
 
-export default function Root() {
+const Root = () => {
     return (
         <>
             <header className="px-44">
@@ -17,3 +17,5 @@ export default function Root() {
         </>
     )
 }
+
+export default Root;

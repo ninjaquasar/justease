@@ -1,7 +1,7 @@
 import React from 'react';
 import CountUp from 'react-countup';
 
-export default function Success() {
+const SuccessServices = () => {
     const successServices = [
         {
             "id": 1,
@@ -54,3 +54,5 @@ const ServiceCard = ({service}) => {
         </div>
     )
 }
+
+export default SuccessServices;

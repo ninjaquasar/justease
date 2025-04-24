@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router';
 
-export default function Footer() {
+const Footer = () => {
     return (
         <footer className="mt-24 px-20 py-24 flex flex-col gap-y-8 items-center bg-neutral-7 bg-text text-base">
             <div className="foot-logo flex gap-x-4">
@@ -38,10 +38,9 @@ export default function Footer() {
                 <a href="https://t.me/ninjaquasar" target="_blank" className="cursor-grenade">
                     <img src="https://i.ibb.co.com/nMm0qdP8/telegram.png" alt="Telegram" className="w-12 hover:-translate-y-2 hover:scale-105 transition-transform duration-200" />
                 </a>
-                <a href="http://wa.me/8801710243940/?text=Howdy%21+Let%27s+connect+and+do+something+fantastic%21" target="_blank" className="cursor-grenade">
-                    <img src="https://i.ibb.co.com/svhQvVNm/whatsapp.png" alt="WhatsApp" className="w-12 hover:-translate-y-2 hover:scale-105 transition-transform duration-200" />
-                </a>
             </div>
         </footer>
     )
 }
+
+export default Footer;

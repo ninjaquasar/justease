@@ -1,14 +1,16 @@
 import React from 'react';
 import Banner from '../../components/Header/Banner';
 import BestLawyers from '../../components/Main/BestLawyers';
-import Success from '../../components/Main/Success';
+import SuccessServices from '../../components/Main/SuccessServices';
 
-export default function Home() {
+const Home = () => {
     return (
         <>
             <Banner></Banner>
             <BestLawyers></BestLawyers>
-            <Success></Success>
+            <SuccessServices></SuccessServices>
         </>
     )
 }
+
+export default Home;

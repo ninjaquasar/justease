@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router';
 
-export default function Navbar() {
+const Navbar = () => {
     return (
         <nav className="py-6 flex justify-between items-center">
             <div className="logo flex gap-x-4">
@@ -32,3 +32,5 @@ export default function Navbar() {
         </nav>
     )
 }
+
+export default Navbar;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { useLoaderData } from 'react-router';
+import { Link, useLoaderData } from 'react-router';
 
-export default function BestLawyers() {
+const BestLawyers = () => {
     const lawyersData = useLoaderData();
     const [ showAll, setShowAll ] = useState(false);
     return (
@@ -27,7 +27,7 @@ export default function BestLawyers() {
 }
 
 const LawyerCard = ({lawyer}) => {
-    const { profilePicture, name, speciality, licenseId, isAvailable, experience } = lawyer;
+    const { id, profilePicture, name, speciality, licenseId, isAvailable, experience } = lawyer;
     // const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     // const dateObj = new Date();
     // const today = weekdays[dateObj.getDay()];
@@ -49,10 +49,14 @@ const LawyerCard = ({lawyer}) => {
                         <p className="flex gap-x-2"><span>&reg;</span>License No: {licenseId}</p>
                     </div>
                 </div>
-                <button type="button" className="w-full text-primary border border-green-900 hover:text-text hover:bg-primary font-bold py-2 rounded-full cursor-grenade drop-shadow-lg drop-shadow-black active:drop-shadow-none active:scale-95 transition-transform">
-                    View Details
-                </button>
+                <Link to={`/lawyers/${id}`}>
+                    <button type="button" className="w-full text-primary border border-green-900 hover:text-text hover:bg-primary font-bold py-2 rounded-full cursor-grenade drop-shadow-lg drop-shadow-black active:drop-shadow-none active:scale-95 transition-transform">
+                        View Details
+                    </button>
+                </Link>
             </div>
         </div>
     )
 }
+
+export default BestLawyers;
