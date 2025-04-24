@@ -1,13 +1,15 @@
 import React from 'react';
-import { useLoaderData, useParams } from 'react-router';
-import LawyerDetailCard from './LawyerDetailCard';
+import { useLoaderData, useNavigate, useParams } from 'react-router';
+import LawyerDetailCard from '../../components/LawyerDetailCard/LawyerDetailCard';
 import { CircleAlertIcon } from 'lucide-react';
+import { addToStorage } from '../../utilities/handleStorage';
 
 const LawyerDetails = () => {
+    const lawyers = useLoaderData();
     const { id } = useParams();
     const lawyerId = parseInt(id);
-    const lawyers = useLoaderData();
-    const wantedLawyer = lawyers.find(lawyer => lawyer.id === lawyerId)
+    const wantedLawyer = lawyers.find(lawyer => lawyer.id === lawyerId);
+    const navigate = useNavigate();
     return (
         <section className="space-y-8">
             <div className="p-20 rounded-2xl bg-neutral-900 border border-neutral-700 text-center space-y-4">
@@ -27,7 +29,7 @@ const LawyerDetails = () => {
                     <CircleAlertIcon size={18}></CircleAlertIcon> Due to high patient volume, we're currently accepting appointments for only today. We appreciate your understanding and co-operation.
                 </div>
                 <div className="p-6">
-                    <button type="button" className="w-full px-5 py-4 rounded-full text-center text-xl font-bold bg-primary cursor-grenade hover:drop-shadow-[0_0.5rem_0.75rem_#0ea10670] hover:scale-[101%] active:drop-shadow-none active:scale-100 transition-[transform_drop-shadow] duration-200">
+                    <button type="button" className="w-full px-5 py-4 rounded-full text-center text-xl font-bold bg-primary border border-primary cursor-grenade hover:bg-transparent hover:text-primary active:-translate-y-1 transition-transform" onClick={() => addToStorage(wantedLawyer.id, wantedLawyer.name, navigate)}>
                         Book Appointment Now
                     </button>
                 </div>

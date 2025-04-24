@@ -2,9 +2,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0EA106;
   --color-base: #141414;
   --color-text: #f6f4f8;
+  --color-primary: #0ea106;
+  --color-error: #dc3545;
   --font-base: "Mulish", Verdana, sans-serif;
   --cursor-grenade: url(/explosive-cursor.png), auto;
 }
@@ -24,6 +25,10 @@
 
 nav > ul > li > a.active {
   border-bottom: 0.125rem solid #d4d4d4;
+}
+
+nav > div.mobile-menu > ul > li > a.active {
+  color: var(--color-primary);
 }
 
 footer > ul > li > a.active {

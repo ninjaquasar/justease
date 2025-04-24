@@ -34,7 +34,7 @@ const SuccessServices = () => {
                 <h2 className="text-4xl font-extrabold">We Provide Best Law Services</h2>
                 <p>JustEase lets you find and book trusted lawyers across Bangladesh in just a few clicks. Whether it's personal, corporate, or urgent matters - we've got your back.</p>
             </div>
-            <div className="services-container grid grid-cols-4 gap-6">
+            <div className="services-container grid grid-cols-2 lg:grid-cols-4 gap-6">
                 {
                     successServices.map(successService => <ServiceCard key={successService.id} service={successService}></ServiceCard>)
                 }
@@ -47,10 +47,10 @@ const SuccessServices = () => {
 const ServiceCard = ({service}) => {
     const { image, topic, count } = service;
     return (
-        <div className="service-card space-y-6 py-10 px-14 rounded-2xl bg-neutral-900 border border-neutral-700">
+        <div className="service-card space-y-6 lg:py-10 px-4 py-6 lg:px-14 rounded-2xl bg-neutral-900 border border-neutral-700">
             <img src={image} alt="Service Image" loading='lazy' />
-            <CountUp start={0} end={count} duration={7.5} suffix="+" enableScrollSpy className="text-5xl font-extrabold"></CountUp>
-            <h5 className="text-xl font-medium mt-6">Total {topic}</h5>
+            <CountUp start={0} end={count} duration={7.5} suffix="+" enableScrollSpy className="text-4xl lg:text-5xl font-extrabold"></CountUp>
+            <h5 className="lg:text-xl font-medium mt-6">Total {topic}</h5>
         </div>
     )
 }

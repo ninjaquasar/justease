@@ -3,14 +3,14 @@ import { NavLink } from 'react-router';
 
 const Footer = () => {
     return (
-        <footer className="mt-24 px-20 py-24 flex flex-col gap-y-8 items-center bg-neutral-7 bg-text text-base">
+        <footer className="mt-24 px-6 lg:px-20 py-12 lg:py-24 flex flex-col gap-y-8 items-center bg-neutral-7 bg-text text-base">
             <div className="foot-logo flex gap-x-4">
                 <img src="https://i.ibb.co.com/0pG0HQ37/footer-logo.png" alt="Logo" />
                 <h3 className="text-3xl font-extrabold bg-gradient-to-r from-base via-green-900 to-primary bg-clip-text text-transparent">
                     JustEase
                 </h3>
             </div>
-            <ul className="foot-links flex gap-x-8 items-center font-medium text-xl">
+            <ul className="foot-links grid grid-cols-2 lg:grid-cols-4 gap-8 items-center text-center font-medium text-lg lg:text-xl">
                 <li>
                     <NavLink to="/" className="px-4 py-3 hover:bg-neutral-300 rounded-lg cursor-grenade">Home</NavLink>
                 </li>

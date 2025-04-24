@@ -1,11 +1,14 @@
 import React from 'react';
+import SimpleParallax from 'simple-parallax-js';
 
 const LawyerDetailCard = ({ lawyer }) => {
     const { profilePicture, name, licenseId, speciality, experience, fee } = lawyer
     return (
         <div className="p-8 rounded-2xl border border-neutral-700 flex items-center gap-x-6">
-            <div className="lawyer-picture-xl w-72 aspect-square">
-                <img src={profilePicture} alt="Profile Picture" className="rounded-2xl w-full h-full" />
+            <div className="lawyer-picture-xl w-80 aspect-square">
+                <SimpleParallax orientation='down' scale={1.2} delay={0.4} transition='cubic-bezier(0,0,0,0.4)'>
+                    <img src={profilePicture} alt="Profile Picture" className="rounded-2xl w-full h-full" />
+                </SimpleParallax>
             </div>
             <div className="lawyer-contentical-info space-y-4">
                 <p className="text-primary bg-green-950/80 px-4 py-2 font-medium rounded-full w-fit">{experience}+ Years Experience</p>
